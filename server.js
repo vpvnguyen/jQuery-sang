@@ -9,6 +9,7 @@ app.use(express.json());
 // make public static
 app.use(express.static('public'));
 
+// serve data when route is hit
 app.get('/api', function(req, res) {
     console.log('api route');
 
@@ -20,6 +21,7 @@ app.get('/api', function(req, res) {
     res.json(data);
 });
 
+// server listening for requests
 app.listen(PORT, function () {
     console.log(`Server is listening on PORT: ${PORT}`)
 });

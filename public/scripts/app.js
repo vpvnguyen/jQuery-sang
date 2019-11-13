@@ -11,6 +11,7 @@ $(".do-something-else").on("click", function() {
 // get data from backend
 $(".get-data").on("click", function() {
 
+    // http request; get json data
   axios
   .get("/api")
   .then(function(response) {
